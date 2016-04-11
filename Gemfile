@@ -26,6 +26,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
+# Pagination
+gem 'will_paginate', '~> 3.1'
+gem 'bootstrap-will_paginate', '~> 0.0.10'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -34,6 +38,8 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
 group :development, :test do
   gem 'guard', '~> 2.13'
+
+  gem 'faker', '~> 1.6', '>= 1.6.3'
 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.3'
